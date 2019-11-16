@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myView: UIView!
+    @IBOutlet weak var segment: UISegmentedControl!
     //var theView:UIView!
     var timer:Timer!
     var counter = 0.0
@@ -37,7 +38,11 @@ class ViewController: UIViewController {
     func rotateView(targetView: UIView) {
         let angle = counter * Double.pi / 180
         targetView.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
-        counter += 4
+        if segment.selectedSegmentIndex == 0 {
+            counter += 4
+        } else {
+            counter -= 4
+        }
         
         //print(counter)
     }
