@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var myslider: UISlider!
     //var theView:UIView!
     var timer:Timer!
     var counter = 0.0
@@ -40,9 +41,9 @@ class ViewController: UIViewController {
         let angle = counter * Double.pi / 180
         targetView.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
         if segment.selectedSegmentIndex == 0 {
-            counter += 4
+            counter += Double(self.myslider.value) * 10.0
         } else {
-            counter -= 4
+            counter -= Double(self.myslider.value) * 10.0
         }
         
         //print(counter)
@@ -52,5 +53,8 @@ class ViewController: UIViewController {
         print(sender.selectedSegmentIndex)
     }
     
+    @IBAction func sliderAction(_ sender: UISlider) {
+        print(sender.value)
+    }
 }
 
