@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         newView.transform = CGAffineTransform(rotationAngle: 0)
         newView.layer.cornerRadius = 15
         newView.clipsToBounds = true
+        //myView.isMultipleTouchEnabled = true
         self.view.addSubview(newView)
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: {
