@@ -26,14 +26,22 @@
                                     <action selector="segmentAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="gPh-vM-BhE"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bkg-LN-IDH">
+                                <rect key="frame" x="87" y="202" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myView" destination="Bkg-LN-IDH" id="Ga3-UE-KQ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="101"/>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
         </scene>
     </scenes>
 </document>
