@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hVk-JI-DZi">
-                                <rect key="frame" x="0.0" y="94" width="414" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hVk-JI-DZi">
+                                <rect key="frame" x="20" y="94" width="374" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="WJK-my-eFj"/>
                                 </constraints>
